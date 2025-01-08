@@ -12,7 +12,7 @@ export default async function Home() {
     <main className="mx-auto max-w-7xl">
       <h1 className="my-4 text-xl font-bold">Home</h1>
       <p className="mt-2 font-bold">Session:</p>
-      <p> className={JSON.stringify(session)}</p>
+      <p>{JSON.stringify(session)}</p>
       <LogoutButton />
     </main>
   );
