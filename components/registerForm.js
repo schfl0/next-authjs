@@ -17,8 +17,8 @@ export default function RegisterForm({ setShowRegister }) {
     reset();
     const result = await registerAction(formData);
 
-    if (!result.ok) {
-      displayRegisterError(result.error.message);
+    if (!result?.ok) {
+      displayRegisterError(result?.error?.message);
     }
   };
 
